@@ -1,0 +1,28 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lindcil — Menu des jeux</title><link rel="icon" href="favicon.ico">
+<style>
+:root{--o:#ff8a2b;--g:#ffd27a;--v:#a86bff}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:system-ui,'Segoe UI',sans-serif;color:#f2ecff;background:radial-gradient(ellipse at 50% -10%,#3a1f5a 0,#140c22 55%,#07050c 100%);overflow-x:hidden}
+body:before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(115deg,transparent 0 60px,rgba(255,138,43,.035) 60px 62px);pointer-events:none}
+header{text-align:center;padding:48px 16px 10px}
+.kanji{font-size:64px;color:var(--o);text-shadow:0 0 24px rgba(255,138,43,.6);line-height:1}
+h1{margin:10px 0 4px;font-size:clamp(28px,5vw,48px);letter-spacing:.12em;text-transform:uppercase;background:linear-gradient(90deg,var(--g),var(--o),var(--v));-webkit-background-clip:text;background-clip:text;color:transparent}
+header p{color:#b9add0;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px;max-width:1180px;margin:34px auto;padding:0 20px}
+.card{position:relative;display:flex;flex-direction:column;background:linear-gradient(160deg,rgba(40,26,60,.92),rgba(18,12,28,.95));border:1px solid rgba(255,138,43,.35);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .18s,box-shadow .18s,border-color .18s}
+.card:hover,.card:focus{transform:translateY(-6px);border-color:var(--o);box-shadow:0 10px 34px rgba(255,138,43,.35),0 0 0 1px var(--o)}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;border-bottom:2px solid var(--o)}
+.card .b{padding:16px 18px 20px;flex:1;display:flex;flex-direction:column;gap:8px}
+.card h2{margin:0;font-size:22px;color:var(--g)}
+.ver{position:absolute;top:10px;right:10px;background:rgba(10,6,16,.85);border:1px solid var(--v);color:#d9c2ff;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:700}
+.card p{margin:0;color:#cfc4e2;font-size:14px;line-height:1.45}
+.play{margin-top:auto;align-self:flex-start;background:linear-gradient(90deg,var(--o),#ff5a2b);color:#1a0d05;font-weight:800;padding:8px 18px;border-radius:8px;letter-spacing:.06em}
+.card.ng{border-color:rgba(168,107,255,.55)}.card.ng .play{background:linear-gradient(90deg,var(--v),#ff5ad1);color:#fff}
+footer{text-align:center;color:#7d7194;font-size:12px;padding:20px}
+</style></head><body>
+<header><div class="kanji">忍</div><h1>Menu des jeux</h1><p>Choisis ton jeu, shinobi.</p></header>
+<main class="grid">
+<a class="card" href="/shinobi-eternel/"><span class="ver">v4.7.1</span><img src="img/s1.jpg" alt="Shinobi 1"><div class="b"><h2>Shinobi 1 — Éternel</h2><p>Le jeu d’origine : clans, bêtes à queues, pupilles, monde ouvert vivant, constellations de compétences et maîtres.</p><span class="play">JOUER</span></div></a>
+<a class="card" href="/shinobi-2/"><span class="ver">Mise à jour 14</span><img src="img/s2.jpg" alt="Shinobi 2"><div class="b"><h2>Shinobi 2</h2><p>Combats plus tactiques : signes des mains, auras de mode, Edo Tensei jouable, substitution par prédiction, mode créatif repensé.</p><span class="play">JOUER</span></div></a>
+<a class="card ng" href="/shinobi-next-gen/"><span class="ver">NG 5</span><img src="img/sng.jpg" alt="Shinobi Next Generation"><div class="b"><h2>Shinobi Next Generation</h2><p>L’ère Boruto : Karma, Mode Baryon, Jōgan, boss Jigen, monde 10× plus grand, mode histoire de Naruto à Boruto.</p><span class="play">JOUER</span></div></a>
+</main><footer>lindcil.github.io</footer></body></html>
